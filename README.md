@@ -1,36 +1,33 @@
-# Check Digit < Insert name > Library
+# @checkdigit/debug
 
-The Check Digit < Insert Name >  library is a library for Check Digit services to deal with [ short description about what the library does]
-  
-  Features:
-* Feature 1
-* Feature 2
-* Feature3
-* (...)
+Copyright (c) 2021 [Check Digit, LLC](https://checkdigit.com)
 
+## Introduction
 
+This module is the official Check Digit implementation of the commonly used [`debug`](https://github.com/visionmedia/debug) module.
+
+It has the following features:
+* drop-in replacement for `debug`
+* zero external dependencies
+* sensitive data filtering (e.g. card numbers for PCI compliance)
 
 ### Installing
 
-`npm install @checkdigit/< Insert name >` 
+`npm install @checkdigit/debug` 
 
 ### Use
-It could be. i.e.
-```
-import * as insertName from '@checkdigit/< Insert name >';
-
-const someVariable = insertName();
 
 ```
+import debug from '@checkdigit/debug';
 
-Or if it can be called as a script. i.e.
+const log = debug('myapp');
+
+log('starting up');
+
 ```
-insert-name -b src/package.json
-```
 
+See [`debug`](https://github.com/visionmedia/debug) for other usage details.
 
-### Links
+## License
 
-* Company website: [your.website.url]
-* Npm: [npm.url]
-    
+MIT
